@@ -1,6 +1,7 @@
 // src/POPOSSpace.js
 
 import logo from "./logo.svg";
+import "./POPOSSpace.css";
 
 function POPOSSpace(props) {
   const { name, image, address } = props;
@@ -11,6 +12,7 @@ function POPOSSpace(props) {
         width="300"
         height="300"
         alt="Hello"
+        className="POPOSSpace"
       />
       <h1>{name}</h1>
       <div>{address}</div>
