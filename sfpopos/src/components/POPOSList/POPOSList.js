@@ -1,5 +1,5 @@
 // src/POPOSList.js
-import data from "/Users/salocohen/dev/courses/FEW/first-react/sfpopos/src/sfpopos-data.json";
+import data from "/Users/salocohen/dev/courses/FEW/first-react/sfpopos/src/sfpopos-data.js";
 import POPOSSpace from "../POPOSSpace/POPOSSpace.js";
 import "./POPOSList.css";
 import { useState } from "react";
@@ -12,13 +12,13 @@ function POPOSList() {
         obj.title.toLowerCase().includes(query) ||
         obj.address.toLowerCase().includes(query)
     )
-    .map(({ title, address, images, hours }, i) => {
+    .map(({ id, title, address, images, hours }) => {
       //const spaces = data.map(({ title, address, images, hours }, i) => {
       return (
         <div className="POPOSLIST">
           <POPOSSpace
-            id={i}
-            key={title}
+            id={id}
+            key={`${title}-${id}`}
             name={title}
             address={address}
             image={images[0]}

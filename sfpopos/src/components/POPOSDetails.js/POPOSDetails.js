@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useParams } from "react-router";
-import data from "/Users/salocohen/dev/courses/FEW/first-react/sfpopos/src/sfpopos-data.json";
+import data from "/Users/salocohen/dev/courses/FEW/first-react/sfpopos/src/sfpopos-data.js";
 import "./POPOSDetails.css";
 
 function POPOSDetails(props) {
