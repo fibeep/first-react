@@ -1,7 +1,7 @@
 // src/Title.js
 
-import React from 'react'
-import './Title.css';
+import React from "react";
+import "./Title.css";
 import { NavLink } from "react-router-dom";
 
 function Title() {
@@ -14,12 +14,26 @@ function Title() {
         </div>
 
         <div>
-          <NavLink to="/">List</NavLink>
-          <NavLink to="/about">About</NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "nav-link-active" : "nav-link"
+            }
+            to="/"
+          >
+            List
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "nav-link-active" : "nav-link"
+            }
+            to="/about"
+          >
+            About
+          </NavLink>
         </div>
       </header>
     </div>
   );
 }
 
-export default Title
+export default Title;
