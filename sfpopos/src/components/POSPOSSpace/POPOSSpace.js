@@ -1,6 +1,6 @@
 // src/POPOSSpace.js
 
-import logo from "./logo.svg";
+
 import "./POPOSSpace.css";
 import { Link } from "react-router-dom";
 
